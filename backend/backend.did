@@ -1,0 +1,11 @@
+type Result = 
+ variant {
+   err: text;
+   ok: float64;
+ };
+service : {
+  add: (float64, float64) -> (float64);
+  divide: (float64, float64) -> (Result);
+  multiply: (float64, float64) -> (float64);
+  subtract: (float64, float64) -> (float64);
+}
